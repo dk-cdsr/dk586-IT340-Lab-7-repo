@@ -1,0 +1,10 @@
+<h2>Items from MongoDB:</h2>
+
+<ul>
+  <li *ngFor="let item of items">
+    {{ item.name }}  <!-- Adjust if your items have a different structure -->
+  </li>
+</ul>
+
+<p *ngIf="items.length === 0">No items found or backend not connected.</p>
+
